@@ -20,7 +20,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-This is a continuation of ...
+This is a continuation of [Installing On-premises Active Directory within Azure VMs](https://github.com/dillanchandran/install-ad)
 
 <p>
 1. Now that Active Directory is installed, the domain controller virtual machine can be promoted to function as an actual domain controller. Log in to the domain controller virtual machine using Remote Desktop/Windows App. Open "Server Manager", and look for the notification flag in the upper-right corner. Click the flag, select "Promote this server to a domain controller" and a configuration wizard will pop up.
@@ -39,8 +39,10 @@ This is a continuation of ...
 <br />
 
 <p>
-3. When logging back into the domain controller virtual machine, you will need to include your domain name followed by a backslash before your username (e.g. mydomain.com\user) because the virtual machine is now part of the domain. Once logged in, open Active Directory Users and Computers. In the domain, create two new Organizational Units:
-- _EMPLOYEES
+3. When logging back into the domain controller virtual machine, you will need to include your domain name followed by a backslash before your username (e.g. mydomain.com\user) because the virtual machine is now part of the domain. Once logged in, open Active Directory Users and Computers. In the domain, create two new Organizational Units:<br />
+
+- _EMPLOYEES<br />
+
 - _ADMINS
 </p>
 <p>
